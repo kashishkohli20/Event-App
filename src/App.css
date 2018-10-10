@@ -1,32 +1,129 @@
-.App {
+body {
+  padding:0;
+  margin:0;
+  font-family: 'Roboto', sans-serif;
+}
+.font-righteous {
+  font-family: 'Righteous', cursive;
+}
+
+.bck-black {
+  background: #3c3c3c;
+}
+.bck-white {
+  background: #ffffff;
+}
+.bck-red {
+  background: #ff4800;
+}
+.bck-yellow {
+  background: #ffa800;
+}
+
+.iconImage {
+  width: 20px;
+  margin-right: 10px;
+}
+
+.center-wrapper {
+  width: 900px;
+  margin:0 auto;
+}
+
+
+/*====================
+      HEADER
+======================*/
+
+
+header {
+  padding:10px 0px;
+  transition: all 300ms ease-in;
+}
+
+header .header-logo {
+  flex-grow: 1;
+}
+header .header-logo-venue {
+  font-size: 40px;
+}
+
+header .header-logo-title {
+  text-transform: uppercase;
+}
+/*====================
+        CAROUSEL
+======================*/
+
+ 
+.carousel-wrapper {
+  height: 700px;
+  overflow: hidden;
+}
+
+.carousel-image {
+  background-size: cover !important;
+}
+
+.artist-name {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  height: 160px;
+  -webkit-transform: translate(-50%, -50%);  
+  transform: translate(-50%, -50%);   
+  border: 2px solid white;
+}
+
+.artist-name .wrapper {
+  border: 2px solid white;
+  height: 121px;
+  margin: 6px;
   text-align: center;
+  color: #fff;
+  font-size: 40px;
+  padding: 21px 70px 0px 70px;
+  text-transform: uppercase;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
+
+/*====================
+        COUNTDOWN
+======================*/
+
+.countdown-wrapper {
+  position:absolute;
+  bottom: 0px;
+  color:#ffffff;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.countdown-wrapper .countdown-top {
+  background: #ff4800;
+  font-size: 19px;
+  padding: 10px;
+  display: inline-block;
+  text-transform: uppercase;
+}
+
+.countdown-wrapper .countdown-bottom {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  background: #d93d00;
+  padding: 10px 20px;
 }
 
-.App-link {
-  color: #61dafb;
+.countdown-wrapper .countdown-time {
+  font-size: 70px;
+  border-right: 1px solid #F44336;
+  margin-right: 14px;
+  padding-right: 49px;
+}
+.countdown-wrapper .countdown-item:last-child .countdown-time{
+  border:none;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.countdown-wrapper .countdown-tag {
+  text-transform: uppercase;
+  font-size: 20px;
+  padding-left: 7px;
 }
