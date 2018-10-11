@@ -3,6 +3,7 @@ import './App.css';
 import Header from './components/Header';
 import Featured from './components/Featured';
 import VenueInfo from './components/VenueInfo';
+import Highlights from './components/Highlights';
 
 class App extends Component {
   render() {
@@ -11,6 +12,7 @@ class App extends Component {
         <Header />
         <Featured />
         <VenueInfo />
+        <Highlights />
       </div>
     );
   }
