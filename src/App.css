@@ -338,3 +338,19 @@ header .header-logo-title {
   padding: 15px 20px;
   text-align: center;
 }
+
+/*====================
+        FOOTER
+======================*/
+
+footer {
+  padding:50px 0px;
+  text-align: center;
+  font-size: 60px;
+  color:#ffffff;
+  background: red;
+}
+
+footer .footer-copyright {
+  font-size: 18px;
+}
